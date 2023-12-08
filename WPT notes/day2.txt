@@ -1,0 +1,64 @@
+Friday, December 8, 2023	9:39 AM
+
+Good Morning :)
+What is the difference bet standalone and distributed app. 2 tier , 3 tier and n-tier distributed app
+What is a web application
+What is a http client ?web client , browser What are different http servers ?
+What is HTML ?
+What is the purpose of <br> and <hr>
+What are tags for partitioning the html body What is let and var and difference
+What are different data types in JS What are the attributes in <img> tag What is MIME type
+What is the structure of HTTP Request ?
+
+
+HTML tags
+
+Anchor tag	this is used to show LINK
+<a href="">	Anchor tag is USED for NAVIGATION = to move from one page to another
+< audio>	
+<video>	
+	ACCEPTING INPUT FROM USER
+	Html Input Elements = tags to accept input from user
+	<input>
+	<button>
+	<select>
+	
+
+
+
+HTML DOM = Document Object Model
+
+<html>part of the document</html> }} this defines a DOCUMENT JS - always performs DOM Manipulation .
+DOM = It is a TREE LIKE structure created by parsing the <html> tag Root= <html>
+Intermediate nodes -- TAGS Leaf = TEXT
+
+DOM is always created by the HTML processor in the Browser before DISPLAYING the page
+
+
+Javascript Class and Objects !!
+
+JSON = Java Script Object Notation = this is the format in which objects are defined in JS
+ 
+stringReturnval = JSON.stringify(json-object) Jsonobject = JSON.parse(stringified-json)
+
+
+
+Javascript String
+let s = "hello" string type
+let s2 = new String("hello") object type
+
+
+Primitive == primitive }}} value is compared object == object }}} address is compared
+
+primitive == object }} the object is converted to primitive
+
+primitive === object }}  the operands on both sides are not of same type SO DIFFERENT
+
+
+https://developer.mozilla.org/en- US/docs/Web/JavaScript/Reference/Global_Objects/String/substring
+
+
+
+JS dates --!!!
+ 
+
