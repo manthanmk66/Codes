@@ -1,0 +1,94 @@
+To create an MVC (Model-View-Controller) application in C# using Command Prompt (CMD) with folders for RidersPoint, BLL (Business Logic Layer), BAL (Business Access Layer), and DAL (Data Access Layer), along with references and solution files (.sln), you can follow these steps:
+
+Please note that this process assumes you have .NET Core or .NET Framework installed on your system.
+
+1. *Create Solution Folder:*
+   Create a folder for your solution and navigate to it in Command Prompt.
+
+bash
+mkdir MyMvcApp
+cd MyMvcApp
+
+
+2. *Create Projects:*
+
+   Create the necessary projects for your application using the dotnet new command.
+
+   - RidersPoint:
+   
+     bash
+     dotnet new mvc -n RidersPoint
+     
+
+   - BLL (Business Logic Layer):
+
+     bash
+     dotnet new classlib -n BLL
+     
+
+   - BAL (Business Access Layer):
+
+     bash
+     dotnet new classlib -n BAL
+     
+
+   - DAL (Data Access Layer):
+
+     bash
+     dotnet new classlib -n DAL
+     
+
+3. *Add References:*
+
+   Navigate into each project folder and add references as necessary.
+
+   For example, from the solution folder:
+
+   - Add reference to BLL in RidersPoint:
+   
+     bash
+     dotnet add RidersPoint reference BLL/BLL.csproj
+     
+
+   - Add reference to BAL in BLL:
+   
+     bash
+     dotnet add BLL reference BAL/BAL.csproj
+     
+
+   - Add reference to DAL in BAL:
+   
+     bash
+     dotnet add BAL reference DAL/DAL.csproj
+     
+
+4. *Create Solution File:*
+
+   Create a solution file (.sln) that includes all projects.
+
+   bash
+   dotnet new sln -n MyMvcApp
+   dotnet sln add RidersPoint/RidersPoint.csproj
+   dotnet sln add BLL/BLL.csproj
+   dotnet sln add BAL/BAL.csproj
+   dotnet sln add DAL/DAL.csproj
+   
+
+5. *Verify Project Structure:*
+
+   Ensure your folder structure and references are properly set up:
+
+   
+   - MyMvcApp
+     - RidersPoint
+     - BLL
+     - BAL
+     - DAL
+     - MyMvcApp.sln
+   
+
+6. *Open in IDE:*
+
+   You can now open the solution in your preferred IDE (Visual Studio, Visual Studio Code, etc.) to start developing your MVC application with the respective layers (RidersPoint, BLL, BAL, DAL).
+
+Please adjust the folder names and specific configurations as needed for your application. This setup creates the necessary projects, establishes references between them, and organizes them within a solution file for easier management and development.
