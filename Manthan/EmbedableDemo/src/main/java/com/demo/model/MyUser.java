@@ -6,58 +6,44 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Myuser11")
+@Table(name="myUserH")
 public class MyUser {
-	@Id
-	private int uid;
-	private String uname;
-	
-	@Embedded
-	private Address addr;
-
+	  @Id
+      private int uId;
+      private String uName;
+      @Embedded
+      private Address addr;
 	public MyUser() {
 		super();
 	}
-
-	public MyUser(int uid, String uname, Address addr) {
+	public MyUser(int uId, String uName, Address addr) {
 		super();
-		this.uid = uid;
-		this.uname = uname;
+		this.uId = uId;
+		this.uName = uName;
 		this.addr = addr;
 	}
-
-	public int getUid() {
-		return uid;
+	public int getuId() {
+		return uId;
 	}
-
-	public void setUid(int uid) {
-		this.uid = uid;
+	public void setuId(int uId) {
+		this.uId = uId;
 	}
-
-	public String getUname() {
-		return uname;
+	public String getuName() {
+		return uName;
 	}
-
-	public void setUname(String uname) {
-		this.uname = uname;
+	public void setuName(String uName) {
+		this.uName = uName;
 	}
-
 	public Address getAddr() {
 		return addr;
 	}
-
 	public void setAddr(Address addr) {
 		this.addr = addr;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
+	@Override
+	public String toString() {
+		return "MyUser [uId=" + uId + ", uName=" + uName + ", addr=" + addr + "]";
+	}
+      
+      
 }
